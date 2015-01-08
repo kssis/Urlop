@@ -1,0 +1,40 @@
+body {
+    
+    background-color: #fff;
+    
+}
+
+p {
+    
+    color: red;
+}
+
+.row_color {
+    
+    background-color: lightblue;
+}
+
+.linki {
+    
+    color: black;
+    font-size: 12pt;   
+}
+
+.main-menu {
+    
+    
+}
+
+ul li a {
+   text-decoration:none !important;
+   background-color: lightblue;
+   display:block;
+   padding: 10px;
+   color: #000000;
+   font-size: 12pt;
+   text-align:center;
+}
+
+ul li a:hover {
+  color:#fff;
+}

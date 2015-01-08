@@ -1,0 +1,45 @@
+kssis\UrlopBundle\Entity\Pracownik:
+     properties:
+         firstName:
+             - NotBlank: ~
+             - Type:
+                    type: string
+             - Length:
+                 min: 3
+                 max: 50
+                 minMessage: "Imię musi składać się z min {{ limit }} znaków"
+                 maxMessage: "Imię musi składać się z max {{ limit }} znaków"   
+         lastName:
+             - NotBlank: ~
+             - Type:
+                    type: string
+             - Length:
+                 min: 3
+                 max: 50
+                 minMessage: "Nazwisko musi składać się z min {{ limit }} znaków"
+                 maxMessage: "Nazwisko musi składać się z max {{ limit }} znaków"
+         emploeeDate:
+             - NotBlank: ~
+             - Type:
+                    type:  DateTime
+         position:
+             - NotBlank: ~
+             - Type:
+                    type: string
+             - Length:
+                 min: 3
+                 max: 50
+                 minMessage: "Stanowisko musi składać się z min {{ limit }} znaków"
+                 maxMessage: "Stanowisko musi składać się z max {{ limit }} znaków"
+         leaveLimit:
+             - NotBlank: ~
+             - Type:
+                    type: numeric
+                    message: Ilość dni urlopu musi być liczbą całkowitą. 
+             - Range:
+                min: 0
+                max: 26
+                minMessage: Liczba musi być wieksza od {{ limit }}
+                maxMessage: Liczba musi być mniejsza  lub równa {{ limit }}
+
+     

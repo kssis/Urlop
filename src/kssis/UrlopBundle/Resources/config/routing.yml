@@ -1,0 +1,31 @@
+kssis_urlop_homepage:
+    path:     /urlop
+    defaults: { _controller: kssisUrlopBundle:Default:index }
+
+kssis_urlop_add_employee:
+    path:     /dodaj_pracownika
+    defaults: { _controller: kssisUrlopBundle:Default:add_employee }
+    
+kssis_urlop_add_employee_success:
+    path:     /dodano_pracownika
+    defaults: { _controller: kssisUrlopBundle:Default:add_employee_success }
+
+kssis_urlop_ManagePracownicy:    
+    path:     /pracownicy
+    defaults: { _controller: kssisUrlopBundle:Default:ManagePracownicy }
+    
+kssi_urlop_edytuj_pracownika:
+    path:     /edytuj_pracownika {id}
+    defaults: { _controller: kssisUrlopBundle:Default:EdytujPracownika }
+
+kssis_urlop_edit_employee_success:
+    path:     /zapisano_pracownika
+    defaults: { _controller: kssisUrlopBundle:Default:edit_employee_success }
+
+kssis_urlop_urlopy:
+    path:     /urlopy
+    defaults: { _controller: kssisUrlopBundle:Default:urlopy }    
+    
+kssis_urlop_pokaz_pracownika:
+    path:     /pracownik {id}
+    defaults: { _controller: kssisUrlopBundle:Default:pokazPracownika }        

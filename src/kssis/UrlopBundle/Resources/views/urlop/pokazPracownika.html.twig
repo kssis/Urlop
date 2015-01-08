@@ -1,0 +1,32 @@
+{% extends 'kssisUrlopBundle:urlop:index.html.twig' %}
+
+{% block title %} Pokaż Pracownika 
+
+    
+{% endblock %}
+
+ {% block nav %}
+     
+           <ul class="nav nav-tabs">
+             <li role="presentation" ><a href="http://localhost/app_dev.php/urlop">Start</a></li>
+   {#          <li role="presentation" class="active" ><a href="http://localhost/app_dev.php/dodaj_pracownika">Pracownicy</a></li> #}
+             <li role="presentation" class="active" ><a href="http://localhost/app_dev.php/pracownicy">Pracownicy</a></li>
+             <li role="presentation"><a href="http://localhost/app_dev.php/urlopy">Urlopy</a></li>
+           </ul>
+         
+         
+         {% endblock %}
+         
+         
+{% block body %}
+    
+    
+       <ul>
+        
+        {% for pracownik in array_pracownicy %}
+            <li> {{  pracownik.firstName }} {{  pracownik.lastName }}</a> </li>
+         {% endfor %}
+    </ul>
+    
+    
+{% endblock %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <title>{% block title %} Aplikacja Urlop {% endblock %}</title>
+         
+        {% stylesheets '@bootstrap_css' %}
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+        <link href="{{ asset('bundles/kssisurlop/css/style.css') }}" rel="stylesheet" type="text/css" />
+        {% endstylesheets %}
+    
+
+         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+     </head>
+     {% block nav %}
+     
+           <ul class="nav nav-tabs">
+             <li role="presentation" class="active"><a href="http://localhost/app_dev.php/urlop">Start</a></li>
+           {#  <li role="presentation"><a href="http://localhost/app_dev.php/dodaj_pracownika">Pracownicy</a></li> #}
+             <li role="presentation"><a href="http://localhost/app_dev.php/pracownicy">Pracownicy</a></li>
+             <li role="presentation"><a href="http://localhost/app_dev.php/urlopy">Urlopy</a></li>
+           </ul>
+         
+         
+         {% endblock %} 
+         
+         
+     <body>
+     {% block body %}
+     
+         
+         
+         
+         
+         
+         <div class ="row">
+             
+             
+             {% block form %}
+                 
+                 
+                 
+             {% endblock %} 
+             
+            
+         </div>    
+
+         
+    {% endblock %}    
+         
+          {% javascripts '@jquery' '@bootstrap_js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+     </body>
+</html>

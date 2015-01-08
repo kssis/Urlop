@@ -1,0 +1,36 @@
+{% extends 'kssisUrlopBundle:urlop:index.html.twig' %}
+
+{% block title %} Urlopy
+
+    
+{% endblock %}
+
+ {% block nav %}
+     
+           <ul class="nav nav-tabs">
+             <li role="presentation" ><a href="http://localhost/app_dev.php/urlop">Start</a></li>
+             <li role="presentation" class="active" ><a href="http://localhost/app_dev.php/pracownicy">Pracownicy</a></li>
+             <li role="presentation"><a href="http://localhost/app_dev.php/urlopy">Urlopy</a></li>
+           </ul>
+         
+         
+         {% endblock %}
+         
+{% block body %}
+    
+ <div class="row" >
+        
+
+    </div>
+    
+    <ul>
+        
+        {% for pracownik in array_pracownicy %}
+            <li>  <a href="http://localhost/app_dev.php/pracownik {{ pracownik.id }}  ">{{  pracownik.firstName }} {{  pracownik.lastName }}</a> </li>
+        {% endfor %}
+    </ul>    
+    
+    
+    
+    
+    {% endblock %}

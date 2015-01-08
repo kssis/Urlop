@@ -1,0 +1,70 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+namespace kssis\UrlopBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+
+ /**
+  * @ORM\Entity
+  * @ORM\Table(name="pracownik")
+  */
+
+
+class Pracownik {
+    
+      /**
+      * @ORM\Id
+      * @ORM\Column(type="integer")
+      * @ORM\GeneratedValue(strategy="AUTO")
+      */
+    
+    
+    protected $id;
+    
+     /**
+      * @ORM\Column(type="string", length=100)
+      */
+    
+    
+    protected $first_name;
+    
+     /**
+      * @ORM\Column(type="string", length=100)
+      */
+    
+    protected $last_name;
+    
+     /**
+      * @ORM\Column(type="date")
+      */
+    
+    protected $emploee_date;
+    
+    
+     /**
+      * @ORM\Column(type="string", length=100)
+      */
+    
+    
+    protected $position;
+    
+    /**
+      * @ORM\Column(type="integer", length=2)
+      */
+    
+    
+    protected $leave_limit;
+    
+    
+    
+    
+   
+}
+
+?>

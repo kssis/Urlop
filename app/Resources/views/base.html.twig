@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <title>{% block title %} Aceramix {% endblock %}</title>
+         
+        {% stylesheets '@bootstrap_css' %}
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+        <link href="{{ asset('bundles/acmehello/css/style.css') }}" rel="stylesheet" type="text/css" />
+        {% endstylesheets %}
+    
+
+    
+
+    
+         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+     </head>
+     <body>
+         
+         
+             <div class ="row row_color" >
+    <div class ="container">
+            <div class ="col-xs-4">
+                <h4 class="text-left">Aceramix</h4>
+            </div>
+            <div class="col-xs-8">
+                <ul class="list-inline text-right main-menu" >
+                    <li><a href="#">O mnie</button></a></li>   
+                    <li><a href="#">Portfolio</button></a></li>
+                    <li><a href="#">Zajęcia dla dzieci</button></a></li>
+                    <li><a href="#">Praze dzieci</button></a></li>
+                    <li><a href="#">O ceramice</button></a></li> 
+                </ul>
+            </div>  
+        </div>
+</div>
+         
+      {% block body %}{% endblock %}   
+         
+          {% javascripts '@jquery' '@bootstrap_js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+     </body>
+</html>

@@ -1,0 +1,7 @@
+kssis_urlop:
+    resource: "@kssisUrlopBundle/Resources/config/routing.yml"
+    prefix:   /
+
+AcmeHelloBundle:
+        resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+        prefix:   /

@@ -1,0 +1,31 @@
+{% extends 'kssisUrlopBundle:urlop:index.html.twig' %}
+
+{% block title %} Lista pracowników
+
+    
+{% endblock %}
+
+ {% block nav %}
+     
+           <ul class="nav nav-tabs">
+             <li role="presentation" ><a href="http://localhost/app_dev.php/urlop">Start</a></li>
+             <li role="presentation" class="active" ><a href="http://localhost/app_dev.php/pracownicy">Pracownicy</a></li>
+             <li role="presentation"><a href="http://localhost/app_dev.php/urlopy">Urlopy</a></li>
+           </ul>
+         
+         
+         {% endblock %}
+         
+{% block body %}
+<div class="col-xs-3">
+     {{ form_start(form) }}
+            {{ form_errors(form) }}
+                {{ form_row(form.firstName)}}
+                {{ form_row(form.lastName)}}
+                {{ form_row(form.emploeeDate)}}
+                {{ form_row(form.position)}}
+                {{ form_row(form.leaveLimit)}}
+                {{ form_row(form.save) }}  
+   {{ form_end(form) }}
+</div> 
+          {% endblock %}     

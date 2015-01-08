@@ -1,0 +1,9 @@
+services:
+   kssis.form.type.dodaj_pracownika:
+        class: kssis\UrlopBundle\Form\Type\PracownikType
+        tags:
+            - { name: form.type, alias: formAddPracownik }
+   kssis.form.type.edytuj_pracownika:
+        class: kssis\UrlopBundle\Form\Type\PracownikEdycjaType
+        tags:
+            - { name: form.type, alias: formEditPracownik }
